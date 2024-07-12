@@ -1,5 +1,11 @@
 # Telecom Churn Predictor
 
+<div align="center">
+    <img alt="churn" src="C:\Users\lette\OneDrive\Pictures\pikaso_texttoimage_sketch-lines-dissatisfied-phone-user-pencil-drawin.jpeg" width="100%" height="300">
+</div>
+
+<br>
+
 ## Business Problem
 
 ## Solution Strategy
