@@ -1,7 +1,7 @@
 # Telecom Churn Predictor
 
 <div align="center">
-    <img alt="churn" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8911af67d0e46966c09d92a498119e9239eeed72/04_Telecom_Churn_Classification/Photos/pikaso_texttoimage_sketch-lines-dissatisfied-phone-user-pencil-drawin.jpg" width="100%" height="300">
+    <img alt="churn" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8911af67d0e46966c09d92a498119e9239eeed72/04_Telecom_Churn_Classification/Photos/pikaso_texttoimage_sketch-lines-dissatisfied-phone-user-pencil-drawin.jpg">
 </div>
 
 <br>
