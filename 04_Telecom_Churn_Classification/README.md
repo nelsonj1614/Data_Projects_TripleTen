@@ -1,7 +1,7 @@
 # Telecom Churn Predictor
 
 <div align="center">
-    <img alt="churn" src="https://photos.google.com/photo/AF1QipOXYWmW3bP1AdpO5BmNzgNGeS31rU2qX4PxzBru" width="100%" height="300">
+    <img alt="churn" src="https://photos.app.goo.gl/RteZXyTRvunjgA35A" width="100%" height="300">
 </div>
 
 <br>
