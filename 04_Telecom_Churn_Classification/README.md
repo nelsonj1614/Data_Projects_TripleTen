@@ -20,11 +20,13 @@
 
 **Step 5: Data Preparation**
 
-**Step 6: Machine Learning Modeling and Hyperparameter Tuning**
+**Step 6: Machine Learning Modeling**
 
-**Step 7: Conclusions**
+**Step 7: Hyperparameter Tuning**
 
-**Step 8: Model Deployment**
+**Step 8: Conclusions**
+
+**Step 9: Model Deployment**
 
 ## Data Insights
 
