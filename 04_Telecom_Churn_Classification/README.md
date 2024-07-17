@@ -98,12 +98,6 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 |:--------:|:---------:|:------:|:-----:|:-------:|
 |   0.854  |  0.831    |  0.573 | 0.678 |   0.899 |
 
-#### XG Boost Model
-
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.879  |  0.854    |  0.665 | 0.748 |   0.916 |
-
 #### Light GBM Model
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
