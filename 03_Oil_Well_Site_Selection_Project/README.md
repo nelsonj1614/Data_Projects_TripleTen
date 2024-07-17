@@ -46,16 +46,31 @@ Profit is calculated for each region. Bootstrapping used to determine 95% confid
 |:------:|:------------:|:--------------:|
 | 37.579 |    92.592    |     92.078     |
 
+<div align="center">
+    <img alt="oil" src="">
+</div>
+
+
 #### Linear Regression - Region 1
 
 |  RMSE  | Avg Vol Pred | Avg Vol Actual |
 |:------:|:------------:|:--------------:|
 | 00.893 |    68.728    |     68.723     |
 
+<div align="center">
+    <img alt="oil" src="">
+</div>
+
+
 #### Linear Regression - Region 2
 
 |  RMSE  | Avg Vol Pred | Avg Vol Actual |
 |:------:|:------------:|:--------------:|
 | 40.029 |    94.965    |     94.884     |
+
+<div align="center">
+    <img alt="oil" src="">
+</div>
+
 
 ## Profit and Risk
