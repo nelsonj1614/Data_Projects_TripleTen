@@ -53,21 +53,29 @@ The best performing model undergoes hyperparameter tuning via GridSearchCV to fi
 ## Data Insights
 
 * #### Insight 1: Monthly Charges Distribution
-
   <div align="center">
-    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/monthlychargesdist.png
-">
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/monthlychargesdist.png">
+</div>
+
+The distribution seems to display 3 distinct groupings of monthly charges. This could be due to the number of services a customer subscribes to (phone, internet, or both).
+
+ <div align="center">
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/monthlychargesdist.png">
 </div>
 
 * #### Insight 2: Payment Method
   <div align="center">
-    <img alt="distribution" src=>
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/bar2.png">
 </div>
+
+For non-churn customers, payment methods are mostly evenly represented. For churn customers, paying with an electronic check was proportionally overrepresented.
   
 * #### Insight 3: Plan Type
   <div align="center">
-    <img alt="distribution" src=>
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/bar1.png">
 </div>
+
+Churn customers tended to choose the Month-to-month plan by a significantly larger proportion than non-churn customers.
 
 ## Machine Learning Applied
 
