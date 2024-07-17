@@ -60,9 +60,10 @@ The best performing model undergoes hyperparameter tuning via GridSearchCV to fi
 The distribution seems to display 3 distinct groupings of monthly charges. This could be due to the number of services a customer subscribes to (phone, internet, or both).
 
  <div align="center">
-    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/monthlychargesdist.png">
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/2b1f1d05b5d0eb066f30fca971a8372e7b30457a/04_Telecom_Churn_Classification/Photos/dist2.png">
 </div>
 
+Users who churned had higher median monthly charges with less variation (smaller IQR).
 * #### Insight 2: Payment Method
   <div align="center">
     <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/bar2.png">
@@ -81,51 +82,41 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 
 #### Dummy Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.731  |  0.000    |  0.000 | 0.000 |   0.500 |
 
 #### Decision Tree Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.813  |  0.648    |  0.665 | 0.656 |   0.500 |
 
 #### Gradient Boosting Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.854  |  0.831    |  0.573 | 0.678 |   0.899 |
 
 #### XG Boost Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
-
-#### Cat Boost Model
-
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.879  |  0.854    |  0.665 | 0.748 |   0.916 |
 
 #### Light GBM Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
 
 ## Machine Learning Performance
 
-#### Light GBM Model
+#### Final Tuned Light GBM Model
 
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
-
-| Balanced Accuracy |  ROC - AUC  |      F1     |Training Time|
-|:-----------------:|:-----------:|:-----------:|:-----------:|
-|   0.0 +/- 0.0   | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
 
 ## Business Results
 
