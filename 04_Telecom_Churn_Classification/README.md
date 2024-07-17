@@ -117,9 +117,3 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
 |   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
-
-## Business Results
-
-## Conclusions
-
-## Next Steps
