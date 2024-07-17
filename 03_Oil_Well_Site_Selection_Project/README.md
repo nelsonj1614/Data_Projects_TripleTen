@@ -3,7 +3,7 @@
 **Project:** Find the best place to drill a new well by creating a machine learning model to predict the capacity of oil reserves in each region.
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/004e565c6c19f9c83ae66a4bd4ff8d80f96a0f7d/03_Oil_Well_Site_Selection_Project/Photos/hfsfsa_872e325a773b5c37cf2a7917d675a44fb83b7992.jpg">
 </div>
 
 <br>
@@ -20,8 +20,6 @@ I begin by training linear regression models on the 3 datasets provided. From th
 - Build a model for predicting the volume of reserves in the new wells;
 - Pick the oil wells with the highest estimated values;
 - Pick the region with the highest total profit for the selected oil wells.
-
-You have data on oil samples from three regions. Parameters of each oil well in the region are already known. Build a model that will help to pick the region with the highest profit margin. Analyze potential profit and risks using the Bootstrapping technique.
 
 ## Solution Strategy
 
@@ -57,3 +55,5 @@ The data for each region is fit to a regression model and trained. The metric sc
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
 |   0.854  |  0.831    |  0.573 | 0.678 |   0.899 |
+
+## Profit and Risk
