@@ -33,27 +33,29 @@ Before training, the data must be scaled and split into train, validation and te
 The data for each region is fit to a regression model and trained. The metric scores of each model are recorded.
 
 **Step 4: Preparation for Profit Calculation**
+The minimum total volume of oil and average well capacities are determined. A function is defined to calculate profit.
 
 **Step 5: Risk and Profit Calculation**
+Profit is calculated for each region. Bootstrapping used to determine 95% confidence interval. The region with the greatest mean profit and lowest % risk is selected.
 
 ## Machine Learning Applied
 
 #### Linear Regression - Region 0
 
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.731  |  0.000    |  0.000 | 0.000 |   0.500 |
+|  RMSE  | Avg Vol Pred | Avg Vol Actual |
+|:------:|:------------:|:--------------:|
+| 37.579 |    92.592    |     92.078     |
 
 #### Linear Regression - Region 1
 
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.813  |  0.648    |  0.665 | 0.656 |   0.500 |
+|  RMSE  | Avg Vol Pred | Avg Vol Actual |
+|:------:|:------------:|:--------------:|
+| 00.893 |    68.728    |     68.723     |
 
 #### Linear Regression - Region 2
 
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.854  |  0.831    |  0.573 | 0.678 |   0.899 |
+|  RMSE  | Avg Vol Pred | Avg Vol Actual |
+|:------:|:------------:|:--------------:|
+| 40.029 |    94.965    |     94.884     |
 
 ## Profit and Risk
