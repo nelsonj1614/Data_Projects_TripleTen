@@ -55,15 +55,14 @@ The best performing model undergoes hyperparameter tuning via GridSearchCV to fi
 * #### Insight 1: Monthly Charges Distribution
 
   <div align="center">
-    <img alt="distribution" src=>
+    <img alt="distribution" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/5c2ca468327ebdf123cfe5262f307c8bbec2513a/04_Telecom_Churn_Classification/Photos/monthlychargesdist.png
+">
 </div>
-  
+
 * #### Insight 2: Payment Method
   <div align="center">
     <img alt="distribution" src=>
 </div>
-
-
   
 * #### Insight 3: Plan Type
   <div align="center">
