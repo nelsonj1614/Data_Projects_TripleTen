@@ -47,7 +47,8 @@ Profit is calculated for each region. Bootstrapping used to determine 95% confid
 | 37.579 |    92.592    |     92.078     |
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img1.png
+">
 </div>
 
 
@@ -58,7 +59,8 @@ Profit is calculated for each region. Bootstrapping used to determine 95% confid
 | 00.893 |    68.728    |     68.723     |
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img2.png
+">
 </div>
 
 
@@ -69,7 +71,7 @@ Profit is calculated for each region. Bootstrapping used to determine 95% confid
 | 40.029 |    94.965    |     94.884     |
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img3.png">
 </div>
 
 
