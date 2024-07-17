@@ -52,11 +52,13 @@ The best performing model undergoes hyperparameter tuning via GridSearchCV to fi
 
 ## Data Insights
 
-* #### Insight 1
+* #### Insight 1: Monthly Charges Distribution
+
   
-* #### Insight 2
   
-* #### Insight 3
+* #### Insight 2: Payment Method
+  
+* #### Insight 3: Plan Type
 
 ## Machine Learning Applied
 
