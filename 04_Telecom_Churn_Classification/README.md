@@ -47,7 +47,7 @@ A pipeline is constructed through which the data can be preprocessed before bein
 **Step 6: Machine Learning Modeling**
 The data is trained on several models by cross evaluation. At this stage no hyperparameters are tuned. The metric scores of each are recorded and the best performing model proceeds to the next stage.
 
-**Step 7: Hyperparameter Tuning**
+**Step 7: Model Tuning**
 The best performing model undergoes hyperparameter tuning via GridSearchCV to find the optimal hyperparamters.
 
 ## Data Insights
