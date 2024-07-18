@@ -30,38 +30,51 @@ The dataset contains the abbreviation ESRB. The Entertainment Software Rating Bo
 
 ## Key Data Insights
 
-#### Insight 1:
-
-
-<div align="center">
-    <img alt="vg" src="">
-</div>
-
-
-#### Insight 2:
+#### Insight 1: Games Released by Year
 
 <div align="center">
-    <img alt="vg" src="">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg1.png">
 </div>
 
+There is an increase in games in the mid 1990s and then a larger increase in the early 2000s, climaxing around 2008/2009.
 
-#### Insight 3:
+#### Insight 2: Total Sales by Year by Platform
 
 <div align="center">
-    <img alt="vg" src="">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg2.png">
 </div>
 
-#### Insight 4:
+The highest distribution falls from around the year 2005 to 2011. Platforms tend to have a 6 - 10 year lifespan. The distribution of sales over time generally follows a normal distribution. Now that I know the trends consoles tend to follow, I can set the time frame for limiting my dataset. Given the above analysis, I will limit my analysis to video game releases from the past 3 years. Judging from the lifespans of the platforms, data within this range includes games and consoles that are still popularly sold.
+
+#### Insight 3: Top 3 Platforms (Sales by Year)
 
 <div align="center">
-    <img alt="vg" src="">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg3.png">
 </div>
 
-#### Insight 5:
+While the 3DS did not follow a normal distribution, the PS4 and Xbox One seem to be following the curve. Given that data for 2016 may not be complete (assuming that the analysis is done in 2016 in preparation for 2017), actual sales for PS4 and Xbox One may be higher than observed in the dataset. Successful older consoles tended to have a lifespan from 6 - 10 years, therefore these consoles may not have hit their climax yet.
+
+#### Insight 4: Game Genre Sales
 
 <div align="center">
-    <img alt="vg" src="">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg4.png">
 </div>
+
+Action games are the genre most often produced. The Role-Playing genre, the 2nd highest, is only about 1/3 of the size of the Action genre. Puzzle games had the smallest count at less than 100 games produced.
+
+<div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg5.png">
+</div>
+
+Although Action games lead both the count and sales lists, the margin is greatly reduced and the order has changed. Shooter games, 5th highest in the count chart, make up over 150 in sales. Sports also follows a similar pattern, with fewer games produced but significantly higher sales. Genres near the end of the list such as puzzle and strategy, however, remain in the same position on both charts.
+
+#### Insight 5: Sales Distributions by Genre
+
+<div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/f4a695a6a107a6614c3d1fab166e42dabb97b044/02_Video_Game_Market_Analysis/Photos/vg6.png">
+</div>
+
+Distribution of sales by genre follows a similar distribution with a positive skew given the great number of outliers. This reflects findings that were suggested with the box plots we plotted above.
 
 ## Regional User Profiles
 
