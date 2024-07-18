@@ -42,12 +42,11 @@ Data that is not relevant or useful to analysis and modeling is removed from the
 Key insights from the data are explored through data visualization. The class imbalance (Churn), univariate distributions (through histograms and bar charts) and relationships between data (scatterplots) are explored.
 
 **Step 5: Data Preparation**
-A pipeline is constructed through which the data can be preprocessed before being passed to a model (estimator). This includes scaling (for numeric features) and encoding (for categorical features).
+A pipeline is constructed through which the data can be preprocessed before being passed to a model (estimator). This includes scaling (for numeric features) and encoding (for categorical features). Since there is a class imbalance, the data is upsampled.
 
 **Step 6: Machine Learning Modeling**
-The data is trained on several models by cross evaluation. At this stage no hyperparameters are tuned. The metric scores of each are recorded and the best performing model proceeds to the next stage.
+The data is trained on several models by cross evaluation. Each model undergoes hyperparameter tuning via GridSearchCV to find the optimal parameters. The metric scores of each are recorded and the best performing model proceeds is selected.
 
-**Step 7: Model Tuning**
 The best performing model undergoes hyperparameter tuning via GridSearchCV to find the optimal hyperparamters.
 
 ## Data Insights
@@ -84,38 +83,22 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.268  |  0.000    |  0.000 | 0.000 |   0.500 |
+|   0.731  |  0.000    |  0.000 | 0.000 |   0.500 |
 
 #### Decision Tree Model
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.813  |  0.648    |  0.665 | 0.656 |   0.500 |
+|   0.792  |  0.582    |  0.802 | 0.656 |   0.674 |
 
 #### Gradient Boosting Model
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.854  |  0.831    |  0.573 | 0.678 |   0.899 |
+|   0.872  |  0.810    |  0.688 | 0.744 |   0.919 |
 
 #### Light GBM Model
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
-
-## Machine Learning Performance
-
-#### Final Light GBM Model
-
-**Training**
-
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
-
-**Test**
-
-| Accuracy | Precision | Recall |  F1   | Roc-Auc |
-|:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
+|   0.878  |  0.788    |  0.749 | 0.768 |   0.922 |
