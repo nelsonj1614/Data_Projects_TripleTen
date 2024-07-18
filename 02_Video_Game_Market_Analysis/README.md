@@ -3,7 +3,7 @@
 **Project:** Discover patterns and insights in historical video game sales data for an upcoming advertising campaign. 
 
 <div align="center">
-    <img alt="gaming" src="">
+    <img alt="gaming" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/9660385abc0252026fe3eb86bd539e1b6cdf010f/02_Video_Game_Market_Analysis/Photos/pexels-kowalievska-1174746.jpg">
 </div>
 
 <br>
