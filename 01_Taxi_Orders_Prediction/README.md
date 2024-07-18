@@ -61,7 +61,7 @@ The model with the lowest RMSE score is selected for use in predicting taxi orde
     <img alt="trendseason" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/791035fb307c5492f07f189a22e239b480728219/01_Taxi_Orders_Prediction/Photos/vg7.png">
 </div>
 
-- To study the series in more detail, only 1 month is included in the data slice for 'seasonal_decompose'.
+- To study the series in more detail, only 1 month is included in the data slice.
   
 - As would be expected, there is a daily seasonal cycle of orders (orders for taxi service are highest at the busiest times of day.
   
