@@ -48,7 +48,7 @@ The model with the lowest RMSE score is selected for use in predicting taxi orde
 **Rolling Mean:**
 
 <div align="center">
-    <img alt="dummy" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/629219628ed9c708966eb48ee30c936865a7d84b/01_Taxi_Orders_Prediction/Photos/taxi_airport.jpg">
+    <img alt="timeseries" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts1.png">
 </div>
 
 - Upon visual inspection, the series appears to be mostly stationary since the mean remains fairly constant. Using the adfuller test and receiving a p-value less than 0.05 confirms this. Since the series is stationary, there is no need to take the difference.
@@ -58,7 +58,7 @@ The model with the lowest RMSE score is selected for use in predicting taxi orde
 **Trend and Seasonality:**
 
 <div align="center">
-    <img alt="dummy" src="">
+    <img alt="trendseason" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/791035fb307c5492f07f189a22e239b480728219/01_Taxi_Orders_Prediction/Photos/vg7.png">
 </div>
 
 - To study the series in more detail, only 1 month is included in the data slice for 'seasonal_decompose'.
