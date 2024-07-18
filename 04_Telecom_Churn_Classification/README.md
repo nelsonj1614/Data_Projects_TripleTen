@@ -84,7 +84,7 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.731  |  0.000    |  0.000 | 0.000 |   0.500 |
+|   0.268  |  0.000    |  0.000 | 0.000 |   0.500 |
 
 #### Decision Tree Model
 
@@ -106,7 +106,15 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 
 ## Machine Learning Performance
 
-#### Final Tuned Light GBM Model
+#### Final Light GBM Model
+
+**Training**
+
+| Accuracy | Precision | Recall |  F1   | Roc-Auc |
+|:--------:|:---------:|:------:|:-----:|:-------:|
+|   0.886  |  0.881    |  0.665 | 0.758 |   0.918 |
+
+**Test**
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
