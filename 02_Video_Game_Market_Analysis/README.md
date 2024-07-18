@@ -34,33 +34,33 @@ The dataset contains the abbreviation ESRB. The Entertainment Software Rating Bo
 
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="vg" src="">
 </div>
 
 
 #### Insight 2:
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="vg" src="">
 </div>
 
 
 #### Insight 3:
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="vg" src="">
 </div>
 
 #### Insight 4:
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="vg" src="">
 </div>
 
 #### Insight 5:
 
 <div align="center">
-    <img alt="oil" src="">
+    <img alt="vg" src="">
 </div>
 
 ## Regional User Profiles
