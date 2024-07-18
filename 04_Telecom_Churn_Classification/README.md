@@ -89,7 +89,7 @@ Churn customers tended to choose the Month-to-month plan by a significantly larg
 
 | Accuracy | Precision | Recall |  F1   | Roc-Auc |
 |:--------:|:---------:|:------:|:-----:|:-------:|
-|   0.792  |  0.582    |  0.802 | 0.656 |   0.674 |
+|   0.792  |  0.582    |  0.802 | 0.674 |   0.853 |
 
 #### Gradient Boosting Model
 
