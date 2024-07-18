@@ -13,20 +13,38 @@ The online store, Ice, sells video games all over the world. User and expert rev
 
 The dataset contains the abbreviation ESRB. The Entertainment Software Rating Board evaluates a game's content and assigns an age rating such as Teen or Mature.
 
-**Data:** Data consists of 1 CSV file. Features include:
+**Data:** Data consists of 1 CSV file with 16,715 rows and 11 columns.
 
+Features include:
+
+1. **Name:** title of game (not unique).
+2. **Platform:** platform of game release.
+3. **Year_of_Release:** year game was released.
+4. **Genre:**
+5. **NA_sales:** game sales in North America.
+6. **EU_sales:** game sales in Europe.
+7. **JP_sales:** game sales in Japan.
+8. **Other_sales:** game sales in other countries (Not NA, EU or JP).
+9. **Critic_Score:** game score ranging from 0 to 100.
+10. **User_Score:** game score ranging from 0 to 10.
+11. **Rating:** ESRB content rating.
 
 ## Solution Strategy
 
 **Step 1: Data Description and Cleaning**
+Exploring shape, size and datatypes of data. Removing duplicated rows and handling missing data through elimination or value estimation.
 
 **Step 2: Feature Engineering**
+Create new features from existing features to gain additional insight during analysis.
 
 **Step 3: Data Analysis**
+Plot distributions of numerical and categorical data. Group data by year, genre, rating and create data visualizations to study trends.
 
 **Step 4: Create Regional User Profiles**
+Create regional user profiles for the three main regions: North America, Europe and Japan. Include most popular platforms, genres and ratings for each region.
 
 **Step 5: Hypothesis Testing**
+Test statistical significance of differences between the mean sales of different platforms.
 
 ## Key Data Insights
 
