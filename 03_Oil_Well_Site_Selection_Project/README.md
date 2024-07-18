@@ -36,7 +36,7 @@ The data for each region is fit to a regression model and trained. The metric sc
 The minimum total volume of oil and average well capacities are determined. A function is defined to calculate profit.
 
 **Step 5: Risk and Profit Calculation**
-Profit is calculated for each region. Bootstrapping used to determine 95% confidence interval. The region with the greatest mean profit and lowest % risk is selected.
+Profit is calculated for each region. Bootstrapping used to determine a more realistic estimate for each region with a 95% confidence interval. The region with the greatest mean profit and lowest % risk is selected.
 
 ## Machine Learning Applied
 
@@ -74,3 +74,34 @@ Profit is calculated for each region. Bootstrapping used to determine 95% confid
 
 
 ## Profit and Risk
+
+- To assess risk and get a more realistic estimate for the actual amount of revenue the company can gain, the bootstrapping technique is used.
+- Since the company will test 500 wells before selecting 200 from those 500, I have set the sample size to 500. Sampling is also with replacement, so the same well can be selected more than once.
+- 1000 samples are made and the profit is calculated. Profit of the sample is added to a list of values. From here the upper and lower values of a 95% confidence interval are returned as well as the mean and risk of loss.
+
+#### Region 1:
+
+- **Projected average volume of top 200 wells:** 155.511
+- **Projected profit from top 200 wells:** 33,208,260.431
+- **Realistic Estimate after Bootstrapping:**
+1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,311,636 and 129,483.
+2. Mean: 6,007,352
+3. Risk of loss: 2.00%
+
+#### Region 2:
+
+- **Projected average volume of top 200 wells:** 138.730
+- **Projected profit from top 200 wells:** 24,150,866.966
+- **Realistic Estimate after Bootstrapping:**
+1. With 95% confidence, we can say that the mean profit will fall somewhere between 11,976,416 and 1,579,885.
+2. Mean: 6,652,411
+3. Risk of loss: 0.30%
+
+#### Region 3:
+
+- **Projected average volume of top 200 wells:** 148.019
+- **Projected profit from top 200 wells:** 27,103,499.635
+- **Realistic Estimate after Bootstrapping:**
+1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,306,445 and -122,185.
+2. Mean: 6,155,597
+3. Risk of loss: 3.00%
