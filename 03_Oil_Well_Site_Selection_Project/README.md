@@ -30,7 +30,7 @@ I begin by training linear regression models on the 3 datasets provided. From th
 Before training, the data must be scaled and split into train, validation and test sets.
 
 **Step 3: Machine Learning Modeling**
-The data for each region is fit to a regression model and trained. The metric scores of each model are recorded.
+The data for each region is fit to a regression model and trained. The RMSE scores of each model are calculated.
 
 **Step 4: Preparation for Profit Calculation**
 The minimum total volume of oil and average well capacities are determined. A function is defined to calculate profit.
