@@ -71,50 +71,50 @@ The model with the lowest RMSE score is selected for use in predicting taxi orde
 
 #### Dummy Model (Median)
 
-<div align="center">
-    <img alt="dummy" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts2.png">
-</div>
-
 |  RMSE  |
 |:------:|
 | 87.242 | 
 
+<div align="center">
+    <img alt="dummy" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts2.png">
+</div>
+
 #### Linear Regression
+
+|  RMSE  |
+|:------:|
+| 52.733 | 
 
 <div align="center">
     <img alt="linear" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts3.png">
 </div>
 
+#### Random Forest Regressor
+
 |  RMSE  |
 |:------:|
 | 52.733 | 
-
-#### Random Forest Regressor
 
 <div align="center">
     <img alt="forest" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts4.png">
 </div>
 
-|  RMSE  |
-|:------:|
-| 52.733 | 
-
 #### Gradient Boosting Regressor
-
-<div align="center">
-    <img alt="gb" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts5.png">
-</div>
 
 |  RMSE  |
 |:------:|
 | 44.128 | 
 
+<div align="center">
+    <img alt="gb" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts5.png">
+</div>
+
 #### Autoregressive Model
+
+|  RMSE  |
+|:------:|
+| 44.128 | 
 
 <div align="center">
     <img alt="ar" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts6.png">
 </div>
-
-|  RMSE  |
-|:------:|
-| 74.854 | 
