@@ -80,27 +80,114 @@ Distribution of sales by genre follows a similar distribution with a positive sk
 
 #### Region 1: North America
 
-- **Projected average volume of top 200 wells:** 155.511
-- **Projected profit from top 200 wells:** 33,208,260.431
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,311,636 and 129,483.
-2. Mean: 6,007,352
-3. Risk of loss: 2.00%
+- **Top 5 Platforms:**
+
+<div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp1.1.png">
+</div>
+
+- **Top 5 Genres:**
+
+<div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp1.2.png">
+</div>
+  
+- **Ratings:**
+
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp1.3.png">
+</div>
+
+- **Summary:**
+
+The top 5 platforms in North America are:
+- PS4
+- Xbox One
+- Xbox 360
+- 3DS
+- PS3
+
+The top 5 genres in North America are:
+- Shooter
+- Action 
+- Sports 
+- Role-Playing 
+- Misc
+
+**Rating:** Comparing sales by rating in North America and overall shows a similar distribution. Mature games are most profitable overall and the same is true in North America. Therefore, game ratings do not significantly affect sales in North America.
 
 #### Region 2: Europe
 
-- **Projected average volume of top 200 wells:** 138.730
-- **Projected profit from top 200 wells:** 24,150,866.966
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 11,976,416 and 1,579,885.
-2. Mean: 6,652,411
-3. Risk of loss: 0.30%
+- **Top 5 Platforms:**
+  
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp2.1.png">
+</div>
+
+- **Top 5 Genres:** 
+
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp2.2.png">
+</div>
+
+- **Ratings:**
+
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp2.3.png">
+</div>
+
+- **Summary:**
+
+The top 5 platforms in Europe are:
+- PS4
+- Xbox One
+- PS3
+- PC
+- 3DS
+
+The top 5 genres in Europe are:
+- Action 
+- Shooter 
+- Sports 
+- Role-Playing 
+- Racing
+
+**Ratings:** When compared to total sales by rating, we get the same distribution. Therefore, game ratings do not significantly alter game sales in Europe.
 
 #### Region 3: Japan
 
-- **Projected average volume of top 200 wells:** 148.019
-- **Projected profit from top 200 wells:** 27,103,499.635
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,306,445 and -122,185.
-2. Mean: 6,155,597
-3. Risk of loss: 3.00%
+- **Top 5 Platforms:**
+  
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp3.1.png">
+</div>
+
+- **Top 5 Genres:** 
+
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp3.2.png">
+</div>
+
+- **Ratings:**
+
+  <div align="center">
+    <img alt="vg" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/457d299ed67b62a097d961b6ad02070d84e57675/02_Video_Game_Market_Analysis/Photos/rp3.3.png">
+</div>
+
+- **Summary:**
+
+The top 5 platforms in Japan are:
+- 3DS 
+- PS4 
+- PSV 
+- PS3 
+- WiiU
+
+The top 5 genres in Japan are:
+- Role-Playing
+- Action 
+- Fighting
+- Misc 
+- Shooter
+
+**Ratings:** The fact that games rated Mature brought in the 2nd least sales in Japan suggests that higher game ratings affect sales.
