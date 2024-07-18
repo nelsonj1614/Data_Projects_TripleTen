@@ -3,105 +3,118 @@
 **Project:** Develop a machine learning model that accurately predicts the number of airport taxi orders each hour.
 
 <div align="center">
-    <img alt="taxi" src="">
+    <img alt="taxi" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/629219628ed9c708966eb48ee30c936865a7d84b/01_Taxi_Orders_Prediction/Photos/taxi_airport.jpg">
 </div>
 
 <br>
 
 ## Business Problem
-Oily Giant wants to drill a new oil well. Before they do this, they need to know where to drill the new well. There are three regions available for well drilling. This goal of this analysis is to identify the most profitable region to drill a new well.
-I begin by training linear regression models on the 3 datasets provided. From this model, I select the oil wells that have the highest predicted reserve volumes. Of these selected wells, I perform calculations to assess which region is most profitable. 
 
-**Data:** Data consists of 3 CSV files. Each file contains wells from a region. In addition to an identifying well ID, each row includes three estimated values (f0,f1,f2) and a 'product' value which is an estimation of the well volume.
+Sweet Lift Taxi company has collected historical data on taxi orders at airports. To attract more drivers during peak hours, they need to predict the amount of taxi orders for the next hour. To do this they need an accurate machine learning model for such a prediction. The company has specified that the RMSE metric on the test set should not be more than 48.
 
-**Steps to choose the location:**
+**Data:** The data is stored in file `taxi.csv`. The data contains time series data from 2018 in the form of the number of taxi cab orders received every 10 minutes. The number of orders is in the '*num_orders*' column.
 
-- Collect the oil well parameters in the selected region: oil quality and volume of reserves;
-- Build a model for predicting the volume of reserves in the new wells;
-- Pick the oil wells with the highest estimated values;
-- Pick the region with the highest total profit for the selected oil wells.
+**Solution Steps:**
+
+1. Download the data and resample it by one hour.
+2. Analyze the data.
+3. Create new features useful in model training.
+4. Train different models with different hyperparameters. The test sample should be 10% of the initial dataset. 
+5. Test the data using the test sample.
+6. Select the model with the best performance on the test dataset.
 
 ## Solution Strategy
 
 **Step 1: Data Description and Cleaning**
- In this first section the data is collected and studied. The missing values are estimated or removed. Finally, a initial data description is carried out to get a feel for the data. Therefore some calculations of descriptive statistics are made to get an understanding of the center, spread and frequency of data.
+ In this first section the data is collected and studied. The missing values are estimated or removed. Finally, a initial data description is carried out to get a feel for the data.
 
-**Step 2: Data Preparation**
-Before training, the data must be scaled and split into train, validation and test sets.
+**Step 2: Exploratory Data Analysis**
+The time series data is analyzed. The mean and standard deviation are calculated. A test is carried out to determine whether the time series is stationary. Trends and seasonality are displayed using the scipy library.
 
-**Step 3: Machine Learning Modeling**
-The data for each region is fit to a regression model and trained. The RMSE scores of each model are calculated.
+**Step 3: Feature Engineering**
+Features useful for time series forecasting are created such as lags, rolling means and datetime data (months, etc.).
 
-**Step 4: Preparation for Profit Calculation**
-The minimum total volume of oil and average well capacities are determined. A function is defined to calculate profit.
+**Step 4: Machine Learning Modeling**
+Before training, the data must be scaled and split into train, validation and test sets. Then, each model is fitted to the training data and hyperparameters are tuned.
 
-**Step 5: Risk and Profit Calculation**
-Profit is calculated for each region. Bootstrapping used to determine a more realistic estimate for each region with a 95% confidence interval. The region with the greatest mean profit and lowest % risk is selected.
+**Step 5: Model Testing**
+The trained models are used to make predictions. The RMSE score for each model is recorded. The predicted and actual test values are overlaid in a line plot for an intuitive understanding of how close the model predictions are to the actual values.
+
+**Step 6: Model Selection**
+The model with the lowest RMSE score is selected for use in predicting taxi order volume by hour.
+
+## Time Series Trends and Seasonality
+
+**Rolling Mean:**
+
+<div align="center">
+    <img alt="dummy" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/629219628ed9c708966eb48ee30c936865a7d84b/01_Taxi_Orders_Prediction/Photos/taxi_airport.jpg">
+</div>
+
+- Upon visual inspection, the series appears to be mostly stationary since the mean remains fairly constant. Using the adfuller test and receiving a p-value less than 0.05 confirms this. Since the series is stationary, there is no need to take the difference.
+
+- Plotting the original data with the rolling mean supports the result of the adfuller test. The mean remains relatively stable through the series.
+
+**Trend and Seasonality:**
+
+<div align="center">
+    <img alt="dummy" src="">
+</div>
+
+- To study the series in more detail, only 1 month is included in the data slice for 'seasonal_decompose'.
+  
+- As would be expected, there is a daily seasonal cycle of orders (orders for taxi service are highest at the busiest times of day.
+  
+- Each week there are 2-3 'humps' of upward/downward trends.
 
 ## Machine Learning Applied
 
-#### Linear Regression - Region 0
-
-|  RMSE  | Avg Vol Pred | Avg Vol Actual |
-|:------:|:------------:|:--------------:|
-| 37.579 |    92.592    |     92.078     |
+#### Dummy Model (Median)
 
 <div align="center">
-    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img1.png">
+    <img alt="dummy" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts2.png">
 </div>
 
+|  RMSE  |
+|:------:|
+| 87.242 | 
 
-#### Linear Regression - Region 1
-
-|  RMSE  | Avg Vol Pred | Avg Vol Actual |
-|:------:|:------------:|:--------------:|
-| 00.893 |    68.728    |     68.723     |
+#### Linear Regression
 
 <div align="center">
-    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img2.png">
+    <img alt="linear" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts3.png">
 </div>
 
+|  RMSE  |
+|:------:|
+| 52.733 | 
 
-#### Linear Regression - Region 2
-
-|  RMSE  | Avg Vol Pred | Avg Vol Actual |
-|:------:|:------------:|:--------------:|
-| 40.029 |    94.965    |     94.884     |
+#### Random Forest Regressor
 
 <div align="center">
-    <img alt="oil" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/8f6347a0326b807ccc319554d8ce4b5b30b114dd/03_Oil_Well_Site_Selection_Project/Photos/img3.png">
+    <img alt="forest" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts4.png">
 </div>
 
+|  RMSE  |
+|:------:|
+| 52.733 | 
 
-## Profit and Risk
+#### Gradient Boosting Regressor
 
-- To assess risk and get a more realistic estimate for the actual amount of revenue the company can gain, the bootstrapping technique is used.
-- Since the company will test 500 wells before selecting 200 from those 500, I have set the sample size to 500. Sampling is also with replacement, so the same well can be selected more than once.
-- 1000 samples are made and the profit is calculated. Profit of the sample is added to a list of values. From here the upper and lower values of a 95% confidence interval are returned as well as the mean and risk of loss.
+<div align="center">
+    <img alt="gb" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts5.png">
+</div>
 
-#### Region 1:
+|  RMSE  |
+|:------:|
+| 44.128 | 
 
-- **Projected average volume of top 200 wells:** 155.511
-- **Projected profit from top 200 wells:** 33,208,260.431
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,311,636 and 129,483.
-2. Mean: 6,007,352
-3. Risk of loss: 2.00%
+#### Autoregressive Model
 
-#### Region 2:
+<div align="center">
+    <img alt="ar" src="https://github.com/nelsonj1614/Data_Projects_TripleTen/blob/6ada52f556bea8fdc71e1176bd90d2832c5d4cfe/01_Taxi_Orders_Prediction/Photos/ts6.png">
+</div>
 
-- **Projected average volume of top 200 wells:** 138.730
-- **Projected profit from top 200 wells:** 24,150,866.966
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 11,976,416 and 1,579,885.
-2. Mean: 6,652,411
-3. Risk of loss: 0.30%
-
-#### Region 3:
-
-- **Projected average volume of top 200 wells:** 148.019
-- **Projected profit from top 200 wells:** 27,103,499.635
-- **Realistic Estimate after Bootstrapping:**
-1. With 95% confidence, we can say that the mean profit will fall somewhere between 12,306,445 and -122,185.
-2. Mean: 6,155,597
-3. Risk of loss: 3.00%
+|  RMSE  |
+|:------:|
+| 74.854 | 
